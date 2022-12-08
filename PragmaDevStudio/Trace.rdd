@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="-" text="ProcesA
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="-" text="ProcesB
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="-" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM26" identifier="COND1" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND1" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM26"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM2" identifier="COND2" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND2" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="-" text="PingStart(|{param1|=3|})" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM27" identifier="MSG1" text="PingStart(|{param1|=3|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM29" identifier="MSG2" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33" identifier="COND3" background="-" text="WaitAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WaitAck" identifier="COND3" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM3" identifier="MSG2" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T1(3)" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11" identifier="COND4" background="-" text="Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="14"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait" identifier="COND4" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T1" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM14" identifier="MSG3" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15" identifier="COND5" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND5" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM35" identifier="MSG3" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM29" identifier="MSG4" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33" identifier="COND6" background="-" text="WaitAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WaitAck" identifier="COND6" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM3" identifier="MSG4" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T1(3)" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11" identifier="COND7" background="-" text="Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="17"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait" identifier="COND7" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T1" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM14" identifier="MSG5" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15" identifier="COND8" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND8" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM35" identifier="MSG5" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM29" identifier="MSG6" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33" identifier="COND9" background="-" text="WaitAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="WaitAck" identifier="COND9" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM33"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM3" identifier="MSG6" text="Ping"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_START" color="-" text="T1(3)" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11" identifier="COND10" background="-" text="Wait"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Wait" identifier="COND10" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="TIMER_TIMEOUT" color="-" text="T1" type="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM14" identifier="MSG7" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15" identifier="COND11" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND11" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesb.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM35" identifier="MSG7" text="PingAck"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM54" identifier="MSG8" text="PingEnd"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="-" text="PingEnd" identifier="MSG8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="-" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM46" identifier="COND12" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="23"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="-" text="Idle" identifier="COND12" model_id="PragmaDevStudio:symbol*c:\users\domin\documents\github\telekomunacijski-protokoli\pragmadevstudio\procesa.rdd*SYM46"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+</MscDiagram>
